@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+}
+body {
+background-color: rgb(249, 247, 251);
+font-family: sans-serif;
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+margin: 0;
+}
+.container {
+    background-color: rgb(208, 203, 203);
+    border-radius: 5px;
+    box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+    
+}
+.header {
+    background-color: #c6beb6;
+    padding: 20px 40px;
+    border-bottom: 1px solid #d3d8db;
+}
+.header h2{
+    margin: 0;
+}
+.form{
+    padding: 30px 40px;
+}
+.form_control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form_control label {
+    display: inline-block;
+    margin-bottom: 5px;
+   
+}
+.form_control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+.form_control.success input{
+    border-color: green;
+
+}
+.form_control.error input{
+    border-color: red;
+}
+.form_control small {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+.form_control.error small{
+    visibility: visible;
+    color: red;
+}
+
+.form button{
+    background-color: rgb(176, 17, 176);
+    border: 2px solid rgb(176, 17, 176);
+    border-radius: 4px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
