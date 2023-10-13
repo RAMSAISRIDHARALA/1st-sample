@@ -1,7 +1,7 @@
 FROM node:18
 WORKDIR /user/index.html
 COPY .* ./
-RUN npm i 
-RUN npm run build
+RUN yarn 
+RUN yarn run build
 EXPOSE 3000
-CMD [ "npm", "start" ]
+CMD [ "yarn", "start" ]
