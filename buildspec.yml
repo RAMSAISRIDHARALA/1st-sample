@@ -11,12 +11,11 @@ phases:
       - echo Build started on `date`
       - echo Building the Docker image...
       - docker build -t demo .
-      - echo Docker image built.
+      - docker tag demo:latest 213810253225.dkr.ecr.ap-south-1.amazonaws.com/demo:latest
   
   post_build:
     commands:
       - echo Pushing the Docker image to Amazon ECR...
-      - docker tag demo:latest 213810253225.dkr.ecr.ap-south-1.amazonaws.com/demo:latest
       - docker push 213810253225.dkr.ecr.ap-south-1.amazonaws.com/demo:latest
       - echo Docker image pushed to ECR.
 
